@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>调查问卷</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js"></script>
+	<!--underscore-min-->
+	<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<!--jQuery-->
+	<!--<script src="https://cdn.bootcss.com/Swiper/3.3.1/js/swiper.min.js"></script>
+	<link href="https://cdn.bootcss.com/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">-->
+	<!--swiper-3.3.1-->
+	<!--<link href="http://cdn.bootcss.com/weui/1.0.2/style/weui.min.css" rel="stylesheet">-->
+	<!--weUI-->
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--Bootstrap-3.3.7-->
+	<script src="https://cdn.bootcss.com/limonte-sweetalert2/5.3.8/sweetalert2.min.js"></script>
+	<link href="https://cdn.bootcss.com/limonte-sweetalert2/5.3.8/sweetalert2.min.css" rel="stylesheet">
+	<!--sweetalert2-->
+	<!--<link href="http://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">-->
+	<!--animate-->
+	<!--<script src="http://cdn.bootcss.com/AniJS/0.9.3/anijs.js"></script>-->
+	<!--AniJS-->
+	<!--<script src="http://cdn.bootcss.com/odometer.js/0.4.7/odometer.min.js"></script>-->
+	<!--odometer-->
+	<link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+	<div class="container scroll" id="container">
+		<div ui-view></div>
+	</div>
+	<div id="dialogs">
+		<div class="js_dialog" id="iosDialog2" style="display: none;">
+			<div class="weui-mask"></div>
+			<div class="weui-dialog">
+				<div class="weui-dialog__bd">弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内</div>
+				<div class="weui-dialog__ft">
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">知道了</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/angular.js/1.3.9/angular.js"></script>
+	<script src="https://cdn.bootcss.com/angular.js/1.3.9/angular-route.js"></script>
+	<script src="https://cdn.bootcss.com/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<!--angular-1.3.9-->
+	<script src="dist/js/app.js"></script>
+	<script>
+		var showMenu = function() {
+			swal({
+				title: '<span>提示信息</span>',
+				// type: 'info',
+				html:
+					'这里写提示信息',
+				showCloseButton: true,
+				showCancelButton:  false,
+				confirmButtonText:
+					'<i class="fa fa-thumbs-up"></i> Great!',
+				cancelButtonText:
+					'<i class="fa fa-thumbs-down"></i>'
+				})
+		}
+		
+		$(".swiper-slide").height($(window).height() - 50);
+
+		var overscroll = function(el) {
+		el.addEventListener('touchstart', function() {
+			var top = el.scrollTop
+			, totalScroll = el.scrollHeight
+			, currentScroll = top + el.offsetHeight
+			//If we're at the top or the bottom of the containers
+			//scroll, push up or down one pixel.
+			//
+			//this prevents the scroll from "passing through" to
+			//the body.
+			if(top === 0) {
+			el.scrollTop = 1
+			} else if(currentScroll === totalScroll) {
+			el.scrollTop = top - 1
+			}
+		})
+		el.addEventListener('touchmove', function(evt) {
+			//if the content is actually scrollable, i.e. the content is long enough
+			//that scrolling can occur
+			if(el.offsetHeight < el.scrollHeight)
+			evt._isScroller = true
+		})
+		}
+		overscroll(document.querySelector('.scroll'));
+		document.body.addEventListener('touchmove', function(evt) {
+		//In this case, the default behavior is scrolling the body, which
+		//would result in an overflow.  Since we don't want that, we preventDefault.
+		if(!evt._isScroller) {
+			evt.preventDefault()
+		}
+		})
+	</script>
+</body>
+
+</html>

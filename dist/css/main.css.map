@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.css"],"names":[],"mappings":"AAAA,WACI,YAAA,SACA,IAAA,wCAAA,mBAEJ,UACI,YAAA","file":"main.css","sourcesContent":["@font-face {\n    font-family: \"newFonts\";\n    src: url('../fonts/iconfont.ttf?t=1477231404') format('truetype');\n}\n.newFonts {\n    font-family: \"newFonts\" !important;\n}"]}

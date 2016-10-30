@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "newFonts";
+    src: url('../fonts/iconfont.ttf?t=1477231404') format('truetype');
+}
+.newFonts {
+    font-family: "newFonts" !important;
+}

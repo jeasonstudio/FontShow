@@ -1,0 +1,43 @@
+{
+  "name": "paper",
+  "version": "1.0.0",
+  "description": "乳腺癌调查问卷前端",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp default | http-server -a 0.0.0.0 -p 8000",
+    "build": "gulp build",
+    "server": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeasonstudio/MammaryCancerPaper.git"
+  },
+  "dependencies": {
+    "handlebars": "^3.0.1",
+    "angular-ui-router": "0.2.15"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-less": "^3.0.2",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-ruby-sass": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "gulp-watch-path": "^0.1.0",
+    "gulp-wrap": "^0.11.0",
+    "http-server": "^0.9.0",
+    "stream-combiner2": "^1.0.2"
+  },
+  "author": "Jeason",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeasonstudio/MammaryCancerPaper/issues"
+  },
+  "homepage": "https://github.com/jeasonstudio/MammaryCancerPaper#readme"
+}
