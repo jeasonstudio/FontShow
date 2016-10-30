@@ -12,5 +12,5 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 app.controller('mainCtrl', function ($scope, $rootScope, $http) {
-    console.log("  p1");
+    console.log("p1");
 });

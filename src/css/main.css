@@ -1,7 +1,45 @@
+html {
+    font-size: 62.5%;
+    /*10 ÷ 16 × 100% = 62.5%*/
+}
+
 @font-face {
     font-family: "newFonts";
     src: url('../fonts/iconfont.ttf?t=1477231404') format('truetype');
 }
+
 .newFonts {
     font-family: "newFonts" !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    select:focus,
+    textarea:focus,
+    input:focus {
+        font-size: 16px !important;
+    }
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+@media screen and (max-width: 960px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+    .page-header {
+        margin: 10px 0 5px;
+    }
+}
+.footer {
+    display: block;
+    text-align: center;
+    margin: 10px 0 8px;
 }
