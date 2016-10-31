@@ -24,6 +24,28 @@ html {
     }
 }
 
+.selectFont select {
+    background: transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+    padding-left: 10px;
+    width: auto;
+    line-height: 1.5;
+}
+
+.input {
+    position: relative;
+}
+
+.clearAll {
+    position: absolute;
+    right: -8px;
+    top: 15px;
+    font-size: 20px;
+}
+
 h1 {
     font-size: 3.6rem;
 }
@@ -43,7 +65,9 @@ h1 {
     }
 }
 
-.selectFont , .selectColor , .allClear{
+.selectFont,
+.selectColor,
+.allClear {
     display: block;
     width: auto;
 }
@@ -55,8 +79,6 @@ h1 {
     box-shadow: none;
     border-color: #d2d6de;
     overflow-x: scroll;
-
-    font-family: 'DEUTSCH';
     font-size: 90px;
 }
 

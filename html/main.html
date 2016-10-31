@@ -5,36 +5,37 @@
 	<div class="input">
 		<div class="form-group">
 			<label>InPut</label>
+			<span class="glyphicon glyphicon-remove-circle clearAll" ng-click="clearAll()"></span>
 			<textarea class="form-control" rows="3" placeholder="Enter U Words..." ng-model="inputWords"></textarea>
 		</div>
 	</div>
 	<div class="row">
-		<div class="selectFont col-xs-4">
-			<div class="dropdown">
-				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Dropdown<span class="caret"></span></button>
-				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-				</ul>
-			</div>
+		<div class="selectFont col-xs-2">
+			<select ng-change="changeFonts(font)" ng-model="font">
+				<option value ="Bertholdr" selected="selected">Bertholdr</option>
+				<option value ="civitype">civitype</option>
+				<option value="DEUTSCH">DEUTSCH</option>
+				<option value="K-Calligraphica2">K-Calligraphica2</option>
+				<option value="K-CalligraphicaItalic">K-CalligraphicaItalic</option>
+				<option value="K-CalligraphicaLight">K-CalligraphicaLight</option>
+				<option value="K-Foundation">K-Foundation</option>
+				<option value="LCALLIG">LCALLIG</option>
+				<option value="Magdeburg">Magdeburg</option>
+				<option value="MediciText">MediciText</option>
+				<option value="ofc____">ofc____</option>
+				<option value="OLDENGL">OLDENGL</option>
+				<option value="PAGANINI">PAGANINI</option>
+				<option value="PARCHM">PARCHM</option>
+				<option value="VIVALDII">VIVALDII</option>
+				<option value="WatGoth1">WatGoth1</option>
+			</select>
 		</div>
-		<div class="selectColor col-xs-4">
-			<div class="dropdown">
-				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown">Dropdown<span class="caret"></span></button>
-				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-				</ul>
+		<div class="selectColor col-xs-10">
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					60%
+				</div>
 			</div>
-		</div>
-		<div class="allClear col-xs-2">
-			<button class="btn btn-default" type="button" id="" ng-click="clearAll()">Clear All</button>
 		</div>
 	</div>
 	<div class="inner">
