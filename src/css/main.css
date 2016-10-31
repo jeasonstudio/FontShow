@@ -50,12 +50,18 @@ h1 {
 
 .inner {
     padding: 10px 5px;
-    height: 100px;
+    height: auto;
     border-radius: 0;
     box-shadow: none;
     border-color: #d2d6de;
+    overflow-x: scroll;
 
     font-family: 'DEUTSCH';
+    font-size: 90px;
+}
+
+.innerSpan {
+    overflow-x: scroll;
 }
 
 .footer {
