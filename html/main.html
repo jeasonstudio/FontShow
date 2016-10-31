@@ -2,13 +2,45 @@
 	<div class="page-header">
 		<h1>Fonts Show <small>Designed By Jeason</small></h1>
 	</div>
-	<div>
+	<div class="input">
 		<div class="form-group">
 			<label>InPut</label>
-			<textarea class="form-control" rows="5" placeholder="Enter ..."></textarea>
+			<textarea autofocus="autofocus" class="form-control" rows="3" placeholder="Enter U Words..." ng-model="inputWords"></textarea>
 		</div>
 	</div>
+	<div class="row">
+		<div class="selectFont col-xs-4">
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Dropdown<span class="caret"></span></button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="selectColor col-xs-4">
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown">Dropdown<span class="caret"></span></button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="allClear col-xs-2">
+			<button class="btn btn-default" type="button" id="" ng-click="clearAll()">Clear All</button>
+		</div>
+	</div>
+	<div class="inner">
+		<span ng-bind="inputWords"></span>
+	</div>
 	<div class="footer">
-		<span>Copyright &copy; 2016 All By Jeason With <span style="color:red">❤</span></span>
+		<span>Copyright &copy; 2016 All By Jeason With <span class="footerFonts icon-xin" style="color:red"></span></span>
 	</div>
 </div>

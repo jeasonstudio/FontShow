@@ -1,0 +1,190 @@
+/*Bertholdr*/
+
+@font-face {
+    font-family: "Bertholdr Mainzer Fraktur";
+    src: url('../fonts/Bertholdr Mainzer Fraktur.ttf') format('truetype');
+}
+
+.Bertholdr {
+    font-family: "Bertholdr Mainzer Fraktur" !important;
+}
+
+
+/*civitype*/
+
+@font-face {
+    font-family: "civitype";
+    src: url('../fonts/civitype.ttf') format('truetype');
+}
+
+.civitype {
+    font-family: "civitype" !important;
+}
+
+
+/*DEUTSCH*/
+
+@font-face {
+    font-family: "DEUTSCH";
+    src: url('../fonts/DEUTSCH.ttf') format('truetype');
+}
+
+.DEUTSCH {
+    font-family: "DEUTSCH" !important;
+}
+
+
+/*Kingthings Calligraphica 2*/
+
+@font-face {
+    font-family: "Kingthings Calligraphica 2";
+    src: url('../fonts/Kingthings Calligraphica 2.ttf') format('truetype');
+}
+
+.K-Calligraphica2 {
+    font-family: "Kingthings Calligraphica 2" !important;
+}
+
+
+/*Kingthings Calligraphica Italic*/
+
+@font-face {
+    font-family: "Kingthings Calligraphica Italic";
+    src: url('../fonts/Kingthings Calligraphica Italic.ttf') format('truetype');
+}
+
+.K-CalligraphicaItalic {
+    font-family: "Kingthings Calligraphica Italic" !important;
+}
+
+
+/*Kingthings Calligraphica Light*/
+
+@font-face {
+    font-family: "Kingthings Calligraphica Light";
+    src: url('../fonts/Kingthings Calligraphica Light.ttf') format('truetype');
+}
+
+.K-CalligraphicaLight {
+    font-family: "Kingthings Calligraphica Light" !important;
+}
+
+
+/*Kingthings Foundation*/
+
+@font-face {
+    font-family: "Kingthings Foundation";
+    src: url('../fonts/Kingthings Foundation.ttf') format('truetype');
+}
+
+.K-Foundation {
+    font-family: "Kingthings Foundation" !important;
+}
+
+
+/*LCALLIG*/
+
+@font-face {
+    font-family: "LCALLIG";
+    src: url('../fonts/LCALLIG.ttf') format('truetype');
+}
+
+.LCALLIG {
+    font-family: "LCALLIG" !important;
+}
+
+
+/*Magdeburg*/
+
+@font-face {
+    font-family: "Magdeburg";
+    src: url('../fonts/Magdeburg.ttf') format('truetype');
+}
+
+.Magdeburg {
+    font-family: "Magdeburg" !important;
+}
+
+
+/*Medici Text*/
+
+@font-face {
+    font-family: "Medici Text";
+    src: url('../fonts/Medici Text.ttf') format('truetype');
+}
+
+.MediciText {
+    font-family: "Medici Text" !important;
+}
+
+
+/*ofc____*/
+
+@font-face {
+    font-family: "ofc____";
+    src: url('../fonts/ofc____.ttf') format('truetype');
+}
+
+.ofc____ {
+    font-family: "ofc____" !important;
+}
+
+
+/*OLDENGL*/
+
+@font-face {
+    font-family: "OLDENGL";
+    src: url('../fonts/OLDENGL.ttf') format('truetype');
+}
+
+.OLDENGL {
+    font-family: "OLDENGL" !important;
+}
+
+
+/*PAGANINI*/
+
+@font-face {
+    font-family: "PAGANINI";
+    src: url('../fonts/PAGANINI.ttf') format('truetype');
+}
+
+.PAGANINI {
+    font-family: "PAGANINI" !important;
+}
+
+
+/*PARCHM*/
+
+@font-face {
+    font-family: "PARCHM";
+    src: url('../fonts/PARCHM.ttf') format('truetype');
+}
+
+.PARCHM {
+    font-family: "PARCHM" !important;
+}
+
+
+/*VIVALDII*/
+
+@font-face {
+    font-family: "VIVALDII";
+    src: url('../fonts/VIVALDII.ttf') format('truetype');
+}
+
+.VIVALDII {
+    font-family: "VIVALDII" !important;
+}
+
+
+/*WatGoth1*/
+
+@font-face {
+    font-family: "WatGoth1";
+    src: url('../fonts/WatGoth1.ttf') format('truetype');
+}
+
+.WatGoth1 {
+    font-family: "WatGoth1" !important;
+}

@@ -12,5 +12,10 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 app.controller('mainCtrl', function ($scope, $rootScope, $http) {
-    console.log("p1");
+    // var otherHeight = $(".page-header").height() + $(".form-group").height() + $(".footer").height();
+    // $(".inner").height($(window).height() - otherHeight - 60)
+    $("textarea").trigger("click");
+    $scope.clearAll = function() {
+        $scope.inputWords = '';
+    }
 });
