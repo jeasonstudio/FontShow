@@ -9,11 +9,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: "./html/main.html",
             controller: "mainCtrl"
         })
-        .state('', {
-            url: "/",
-            templateUrl: "./html/main.html",
-            controller: "mainCtrl"
-        })
+        .otherwise('/main')
 });
 
 app.controller('mainCtrl', function ($scope, $rootScope, $http) {
