@@ -1,12 +1,12 @@
 /*Bertholdr*/
 
 @font-face {
-    font-family: "Bertholdr Mainzer Fraktur";
-    src: url('../fonts/Bertholdr Mainzer Fraktur.ttf') format('truetype');
+    font-family: "BertholdrMainzerFraktur";
+    src: url('../fonts/BertholdrMainzerFraktur.ttf') format('truetype');
 }
 
 .Bertholdr {
-    font-family: "Bertholdr Mainzer Fraktur" !important;
+    font-family: "BertholdrMainzerFraktur" !important;
 }
 
 
@@ -34,51 +34,51 @@
 }
 
 
-/*Kingthings Calligraphica 2*/
+/*KingthingsCalligraphica2*/
 
 @font-face {
-    font-family: "Kingthings Calligraphica 2";
+    font-family: "KingthingsCalligraphica2";
     src: url('../fonts/KingthingsCalligraphica2.ttf') format('truetype');
 }
 
-.K-Calligraphica2 {
-    font-family: "Kingthings Calligraphica 2" !important;
+.KCalligraphica2 {
+    font-family: "KingthingsCalligraphica2" !important;
 }
 
 
-/*Kingthings Calligraphica Italic*/
+/*KingthingsCalligraphicaItalic*/
 
 @font-face {
-    font-family: "Kingthings Calligraphica Italic";
+    font-family: "KingthingsCalligraphicaItalic";
     src: url('../fonts/KingthingsCalligraphicaItalic.ttf') format('truetype');
 }
 
-.K-CalligraphicaItalic {
-    font-family: "Kingthings Calligraphica Italic" !important;
+.KCalligraphicaItalic {
+    font-family: "KingthingsCalligraphicaItalic" !important;
 }
 
 
-/*Kingthings Calligraphica Light*/
+/*KingthingsCalligraphicaLight*/
 
 @font-face {
-    font-family: "Kingthings Calligraphica Light";
+    font-family: "KingthingsCalligraphicaLight";
     src: url('../fonts/KingthingsCalligraphicaLight.ttf') format('truetype');
 }
 
-.K-CalligraphicaLight {
-    font-family: "Kingthings Calligraphica Light" !important;
+.KCalligraphicaLight {
+    font-family: "KingthingsCalligraphicaLight" !important;
 }
 
 
-/*Kingthings Foundation*/
+/*KingthingsFoundation*/
 
 @font-face {
-    font-family: "Kingthings Foundation";
+    font-family: "KingthingsFoundation";
     src: url('../fonts/KingthingsFoundation.ttf') format('truetype');
 }
 
-.K-Foundation {
-    font-family: "Kingthings Foundation" !important;
+.KFoundation {
+    font-family: "KingthingsFoundation" !important;
 }
 
 
@@ -106,15 +106,15 @@
 }
 
 
-/*Medici Text*/
+/*MediciText*/
 
 @font-face {
-    font-family: "Medici Text";
-    src: url('../fonts/Medici Text.TTF') format('truetype');
+    font-family: "MediciText";
+    src: url('../fonts/MediciText.TTF') format('truetype');
 }
 
 .MediciText {
-    font-family: "Medici Text" !important;
+    font-family: "MediciText" !important;
 }
 
 

@@ -1,46 +1,48 @@
-<div class="scroll">
+<div class="canScroll">
 	<div class="page-header">
 		<h1>Fonts Show <small>Designed By Jeason</small></h1>
 	</div>
 	<div class="input">
 		<div class="form-group">
-			<label>InPut</label>
-			<span class="glyphicon glyphicon-remove-circle clearAll" ng-click="clearAll()"></span>
+			<div class="menu">
+				<label>Choose Fonts:</label>
+				<div class="selectFont">
+					<select ng-change="changeFonts(font)" ng-model="font">
+						<option value ="Bertholdr">Bertholdr</option>
+						<option value ="civitype">civitype</option>
+						<option value="DEUTSCH">DEUTSCH</option>
+						<option value="KCalligraphica2">K-Calligraphica2</option>
+						<option value="KCalligraphicaItalic">K-CalligraphicaItalic</option>
+						<option value="KCalligraphicaLight">K-CalligraphicaLight</option>
+						<option value="KFoundation">K-Foundation</option>
+						<option value="LCALLIG">LCALLIG</option>
+						<option value="Magdeburg">Magdeburg</option>
+						<option value="MediciText">MediciText</option>
+						<option value="ofc____">ofc____</option>
+						<option value="OLDENGL">OLDENGL</option>
+						<option value="PAGANINI">PAGANINI</option>
+						<option value="PARCHM">PARCHM</option>
+						<option value="VIVALDII">VIVALDII</option>
+						<option value="WatGoth1">WatGoth1</option>
+					</select>
+				</div>
+				<span class="glyphicon glyphicon-info-sign right-fonts"></span>
+				<span class="glyphicon glyphicon-download right-fonts"></span>
+				<span class="glyphicon glyphicon-remove-circle right-fonts" ng-click="clearAll()"></span>
+			</div>
 			<textarea class="form-control" rows="3" placeholder="Enter U Words..." ng-model="inputWords"></textarea>
 		</div>
 	</div>
 	<div class="row">
-		<div class="selectFont col-xs-2">
-			<select ng-change="changeFonts(font)" ng-model="font">
-				<option value ="Bertholdr">Bertholdr</option>
-				<option value ="civitype">civitype</option>
-				<option value="DEUTSCH">DEUTSCH</option>
-				<option value="K-Calligraphica2">K-Calligraphica2</option>
-				<option value="K-CalligraphicaItalic">K-CalligraphicaItalic</option>
-				<option value="K-CalligraphicaLight">K-CalligraphicaLight</option>
-				<option value="K-Foundation">K-Foundation</option>
-				<option value="LCALLIG">LCALLIG</option>
-				<option value="Magdeburg">Magdeburg</option>
-				<option value="MediciText">MediciText</option>
-				<option value="ofc____">ofc____</option>
-				<option value="OLDENGL">OLDENGL</option>
-				<option value="PAGANINI">PAGANINI</option>
-				<option value="PARCHM">PARCHM</option>
-				<option value="VIVALDII">VIVALDII</option>
-				<option value="WatGoth1">WatGoth1</option>
-			</select>
-		</div>
-		<div class="selectColor col-xs-10">
-			<div class="mui-input-row mui-input-range">
-				<input type="range" id="block-range" value="50" min="0" max="100" data-input-slider="4"><span class="mui-tooltip mui-hidden"
-								style="left: 64.89px;">27</span>
-			</div>
+		<div class="selectColor footerFonts">
+			<input class="footerFonts" id="ex10" type="text" data-slider-handle="custom" />
+			<!--<span ng-bind="fontSize"></span>-->
 		</div>
 	</div>
 	<div class="inner">
 		<span class="innerSpan" ng-bind="inputWords"></span>
 	</div>
 	<div class="footer">
-		<span>Copyright &copy; 2016 All By Jeason With <span class="footerFonts icon-xin" style="color:red"></span></span>
+		<span>Copyright &copy; 2016 All By Jeason With <span class="footerFonts icon-xin" style="color:#CC3333"></span></span>
 	</div>
 </div>

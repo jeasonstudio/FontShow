@@ -12,18 +12,35 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 app.controller('mainCtrl', function ($scope, $rootScope, $http) {
+
     // 一次性清理文字
     $scope.clearAll = function () {
-        $(".inner span").fadeOut(1000,function() {
-            $(".inner span").fadeIn(10);
-        });
-        setTimeout("$scope.inputWords = '';",2000);
-    }
+            $(".inner span").fadeOut(1000, function () {
+                $(".inner span").fadeIn(10);
+            });
+            setTimeout("$scope.inputWords = '';", 2000);
+        }
+
     // 默认选中字体
-    $(".innerSpan").css('font-family','Bertholdr');
-    $scope.changeFonts = function(fontName) {
+    $(".innerSpan").css('font-family', 'Bertholdr');
+    $scope.changeFonts = function (fontName) {
         console.log(fontName)
-        $(".innerSpan").css('font-family',fontName);
+        $(".innerSpan").css('font-family', fontName);
     }
     $scope.font = 'Bertholdr';
+
+    // With JQuery Slider
+    $scope.slider = $("#ex10").slider({
+        min: 40,
+        max: 180,
+        step: 5,
+        value: 60,
+        tooltip: 'show',
+    });
+    // $scope.fontSize = '60px';
+    $scope.slider.change(function() {
+        // $scope.fontSize = this.value + 'px';
+        console.log(this.value)
+        $(".inner").css('font-size',this.value + 'px')
+    })
 });

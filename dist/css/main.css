@@ -3,6 +3,10 @@ html {
     /*10 ÷ 16 × 100% = 62.5%*/
 }
 
+.canScroll {
+    overflow-y: auto; 
+}
+
 @font-face {
     font-family: "footerFonts";
     src: url('../fonts/iconfont.ttf?t=1477231404') format('truetype');
@@ -24,35 +28,25 @@ html {
     }
 }
 
-.selectFont select {
-    background: transparent;
-    border-radius: 3px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 1px solid transparent;
-    padding-left: 10px;
-    width: auto;
-    line-height: 1.5;
-}
-
 .input {
     position: relative;
 }
 
-.clearAll {
-    position: absolute;
-    right: -8px;
-    top: 15px;
+.right-fonts {
     font-size: 20px;
+    position: relative;
+    top: 5px;
+    padding: 4px;
+    color: #777;
 }
 
 h1 {
-    font-size: 3.6rem;
+    font-size: 5.6rem;
 }
 
 @media screen and (max-width: 960px) {
     h1 {
-        font-size: 3.6rem;
+        font-size: 5.6rem;
     }
 }
 
@@ -65,11 +59,66 @@ h1 {
     }
 }
 
+.menu {
+    margin: 8px auto 8px auto;
+}
+
 .selectFont,
-.selectColor,
 .allClear {
-    display: block;
+    display: inline-block;
     width: auto;
+    line-height: 1.2;
+    padding: 0 10px 0 10px;
+}
+
+.selectColor {
+    padding: 0 15px 0 15px;
+}
+
+.slider.slider-horizontal {
+    width: 500px;
+}
+
+@media screen and (max-width: 960px) {
+    .slider.slider-horizontal {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slider.slider-horizontal {
+        width: 260px;
+    }
+}
+
+select {
+    border: 0;
+    border-bottom: 2px solid #d2d6de;
+    border-radius: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 120px;
+}
+
+select option {
+    line-height: 3;
+}
+
+.slider-handle.custom {
+    background: transparent none;
+    /* You can customize the handle and set a background image */
+}
+
+
+/* Or display content like unicode characters or fontawesome icons */
+
+.slider-handle.custom::before {
+    line-height: 20px;
+    font-size: 30px;
+    content: '\e7a4';
+    /*unicode star character*/
+    color: #CC3333;
 }
 
 .inner {
@@ -79,7 +128,7 @@ h1 {
     box-shadow: none;
     border-color: #d2d6de;
     overflow-x: scroll;
-    font-size: 90px;
+    font-size: 60px;
 }
 
 .innerSpan {
