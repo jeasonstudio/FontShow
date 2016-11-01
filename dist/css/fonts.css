@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: "DEUTSCH";
-    src: url('../fonts/DEUTSCH.ttf') format('truetype');
+    src: url('../fonts/DEUTSCH.TTF') format('truetype');
 }
 
 .DEUTSCH {
@@ -86,7 +86,7 @@
 
 @font-face {
     font-family: "LCALLIG";
-    src: url('../fonts/LCALLIG.ttf') format('truetype');
+    src: url('../fonts/LCALLIG.TTF') format('truetype');
 }
 
 .LCALLIG {
@@ -98,7 +98,7 @@
 
 @font-face {
     font-family: "Magdeburg";
-    src: url('../fonts/Magdeburg.ttf') format('truetype');
+    src: url('../fonts/Magdeburg.TTF') format('truetype');
 }
 
 .Magdeburg {
@@ -110,7 +110,7 @@
 
 @font-face {
     font-family: "Medici Text";
-    src: url('../fonts/Medici Text.ttf') format('truetype');
+    src: url('../fonts/Medici Text.TTF') format('truetype');
 }
 
 .MediciText {
@@ -134,7 +134,7 @@
 
 @font-face {
     font-family: "OLDENGL";
-    src: url('../fonts/OLDENGL.ttf') format('truetype');
+    src: url('../fonts/OLDENGL.TTF') format('truetype');
 }
 
 .OLDENGL {
@@ -146,7 +146,7 @@
 
 @font-face {
     font-family: "PAGANINI";
-    src: url('../fonts/PAGANINI.ttf') format('truetype');
+    src: url('../fonts/PAGANINI.TTF') format('truetype');
 }
 
 .PAGANINI {
@@ -158,7 +158,7 @@
 
 @font-face {
     font-family: "PARCHM";
-    src: url('../fonts/PARCHM.ttf') format('truetype');
+    src: url('../fonts/PARCHM.TTF') format('truetype');
 }
 
 .PARCHM {
@@ -170,7 +170,7 @@
 
 @font-face {
     font-family: "VIVALDII";
-    src: url('../fonts/VIVALDII.ttf') format('truetype');
+    src: url('../fonts/VIVALDII.TTF') format('truetype');
 }
 
 .VIVALDII {
