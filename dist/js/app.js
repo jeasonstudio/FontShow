@@ -5,7 +5,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.when("", "/main");
     $stateProvider
         .state('main', {
-            url: "/",
+            url: "/main",
             templateUrl: "./html/main.html",
             controller: "mainCtrl"
         })
