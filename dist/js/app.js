@@ -9,15 +9,20 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: "./html/main.html",
             controller: "mainCtrl"
         })
+        .state('', {
+            url: "/",
+            templateUrl: "./html/main.html",
+            controller: "mainCtrl"
+        })
 });
 
 app.controller('mainCtrl', function ($scope, $rootScope, $http) {
     // 一次性清理文字
-    $scope.clearAll = function (mainWord) {
-        $(".inner span").fadeOut(1000,function(mainWord) {
+    $scope.clearAll = function () {
+        $(".inner span").fadeOut(1000,function() {
             $(".inner span").fadeIn(10);
-            $scope.inputWords = '';
         });
+        setTimeout("$scope.inputWords = '';",2000);
     }
     // 默认选中字体
     $(".innerSpan").css('font-family','Bertholdr');
