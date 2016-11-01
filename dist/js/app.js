@@ -6,21 +6,24 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('main', {
             url: "/main",
-            templateUrl: "../../html/main.html",
+            templateUrl: "./html/main.html",
             controller: "mainCtrl"
         })
 });
 
 app.controller('mainCtrl', function ($scope, $rootScope, $http) {
-    var mainWord = $scope.inputWords;
+    // 一次性清理文字
     $scope.clearAll = function (mainWord) {
         $(".inner span").fadeOut(1000,function(mainWord) {
             $(".inner span").fadeIn(10);
-            mainWord = '';
+            $scope.inputWords = '';
         });
     }
+    // 默认选中字体
+    $(".innerSpan").css('font-family','Bertholdr');
     $scope.changeFonts = function(fontName) {
         console.log(fontName)
         $(".innerSpan").css('font-family',fontName);
     }
+    $scope.font = 'Bertholdr';
 });
