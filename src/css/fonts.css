@@ -38,7 +38,7 @@
 
 @font-face {
     font-family: "Kingthings Calligraphica 2";
-    src: url('../fonts/Kingthings Calligraphica 2.ttf') format('truetype');
+    src: url('../fonts/KingthingsCalligraphica2.ttf') format('truetype');
 }
 
 .K-Calligraphica2 {
@@ -50,7 +50,7 @@
 
 @font-face {
     font-family: "Kingthings Calligraphica Italic";
-    src: url('../fonts/Kingthings Calligraphica Italic.ttf') format('truetype');
+    src: url('../fonts/KingthingsCalligraphicaItalic.ttf') format('truetype');
 }
 
 .K-CalligraphicaItalic {
@@ -62,7 +62,7 @@
 
 @font-face {
     font-family: "Kingthings Calligraphica Light";
-    src: url('../fonts/Kingthings Calligraphica Light.ttf') format('truetype');
+    src: url('../fonts/KingthingsCalligraphicaLight.ttf') format('truetype');
 }
 
 .K-CalligraphicaLight {
@@ -74,7 +74,7 @@
 
 @font-face {
     font-family: "Kingthings Foundation";
-    src: url('../fonts/Kingthings Foundation.ttf') format('truetype');
+    src: url('../fonts/KingthingsFoundation.ttf') format('truetype');
 }
 
 .K-Foundation {
