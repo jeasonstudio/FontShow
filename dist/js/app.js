@@ -15,11 +15,11 @@ app.controller('mainCtrl', function ($scope, $rootScope, $http) {
 
     // 一次性清理文字
     $scope.clearAll = function () {
-            $(".inner span").fadeOut(1000, function () {
-                $(".inner span").fadeIn(10);
-            });
-            setTimeout("$scope.inputWords = '';", 2000);
-        }
+        $(".inner span").fadeOut(1000, function () {
+            $(".inner span").fadeIn(10);
+        });
+        setTimeout("$scope.inputWords = '';", 2000);
+    }
 
     // 默认选中字体
     $(".innerSpan").css('font-family', 'Bertholdr');
@@ -38,9 +38,33 @@ app.controller('mainCtrl', function ($scope, $rootScope, $http) {
         tooltip: 'show',
     });
     $rootScope.fontSize = '10 em';
-    $scope.slider.change(function() {
+    $scope.slider.change(function () {
         $rootScope.fontSize = this.value + ' em';
         console.log(this.value)
-        $(".inner").css('font-size',this.value + 'em')
+        $(".inner").css('font-size', this.value + 'em')
     })
+
+    $scope.showInfo = function () {
+        swal({
+            title: '<span>提示信息</span>',
+            type: 'info',
+            html: '这里写提示信息',
+            showCloseButton: true,
+            showCancelButton: false,
+            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!',
+            cancelButtonText: '<i class="fa fa-thumbs-down"></i>'
+        })
+    }
+
+    $scope.getImg = function () {
+        html2canvas($(".inner"), {
+            onrendered: function (canvas) {
+                var url = canvas.toDataURL();
+                //以下代码为下载此图片功能
+                var triggerDownload = $("<a>").attr("href", url).attr("download", getNowFormatDate() + "异常信息.png").appendTo(".inner");
+                triggerDownload[0].click();
+                triggerDownload.remove();
+            }
+        });
+    }
 });

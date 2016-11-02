@@ -41,6 +41,10 @@ html {
     color: #777;
 }
 
+.right-fonts:hover {
+    color: #CC3333;
+}
+
 h1 {
     font-size: 5.6rem;
 }
