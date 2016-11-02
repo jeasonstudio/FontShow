@@ -1,6 +1,6 @@
 # FontShow
 
-神说要有光，于是便有了光。
+上帝说要有光，于是便有了光。
 
 女朋友说要练字，于是便有了 [FontShow](http://fontshow.top/#/main) .
 
