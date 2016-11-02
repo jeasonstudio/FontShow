@@ -31,16 +31,16 @@ app.controller('mainCtrl', function ($scope, $rootScope, $http) {
 
     // With JQuery Slider
     $scope.slider = $("#ex10").slider({
-        min: 40,
-        max: 180,
-        step: 5,
-        value: 60,
+        min: 5,
+        max: 50,
+        step: 1,
+        value: 10,
         tooltip: 'show',
     });
-    // $scope.fontSize = '60px';
+    $scope.fontSize = '10 em';
     $scope.slider.change(function() {
-        // $scope.fontSize = this.value + 'px';
+        $scope.fontSize = this.value + ' em';
         console.log(this.value)
-        $(".inner").css('font-size',this.value + 'px')
+        $(".inner").css('font-size',this.value + 'em')
     })
 });

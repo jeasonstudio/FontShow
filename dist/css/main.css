@@ -4,7 +4,8 @@ html {
 }
 
 .canScroll {
-    overflow-y: auto; 
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 @font-face {
@@ -44,15 +45,28 @@ h1 {
     font-size: 5.6rem;
 }
 
+h1 span {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
 @media screen and (max-width: 960px) {
     h1 {
         font-size: 5.6rem;
+    }
+    h1 span {
+        font-size: 4rem;
+        font-weight: bolder;
     }
 }
 
 @media screen and (max-width: 550px) {
     h1 {
         font-size: 2.6rem;
+    }
+    h1 span {
+        font-size: 2rem;
+        font-weight: bolder;
     }
     .page-header {
         margin: 10px 0 5px;
@@ -72,7 +86,7 @@ h1 {
 }
 
 .selectColor {
-    padding: 0 15px 0 15px;
+    padding: 0 15px 0 25px;
 }
 
 .slider.slider-horizontal {
@@ -89,6 +103,11 @@ h1 {
     .slider.slider-horizontal {
         width: 260px;
     }
+}
+
+.selectColor span {
+    padding: 0 0 0 10px;
+    font-weight: bold;
 }
 
 select {
@@ -128,7 +147,7 @@ select option {
     box-shadow: none;
     border-color: #d2d6de;
     overflow-x: scroll;
-    font-size: 60px;
+    font-size: 10em;
 }
 
 .innerSpan {

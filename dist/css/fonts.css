@@ -1,12 +1,12 @@
 /*Bertholdr*/
 
 @font-face {
-    font-family: "BertholdrMainzerFraktur";
-    src: url('../fonts/BertholdrMainzerFraktur.ttf') format('truetype');
+    font-family: "Bertholdr";
+    src: url('../fonts/Bertholdr.ttf');
 }
 
 .Bertholdr {
-    font-family: "BertholdrMainzerFraktur" !important;
+    font-family: "Bertholdr" !important;
 }
 
 
@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: "civitype";
-    src: url('../fonts/civitype.ttf') format('truetype');
+    src: url('../fonts/civitype.ttf');
 }
 
 .civitype {
@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: "DEUTSCH";
-    src: url('../fonts/DEUTSCH.TTF') format('truetype');
+    src: url('../fonts/DEUTSCH.TTF');
 }
 
 .DEUTSCH {
@@ -34,51 +34,51 @@
 }
 
 
-/*KingthingsCalligraphica2*/
+/*KCalligraphica2*/
 
 @font-face {
-    font-family: "KingthingsCalligraphica2";
-    src: url('../fonts/KingthingsCalligraphica2.ttf') format('truetype');
+    font-family: "KCalligraphica2";
+    src: url('../fonts/KCalligraphica2.ttf');
 }
 
 .KCalligraphica2 {
-    font-family: "KingthingsCalligraphica2" !important;
+    font-family: "KCalligraphica2" !important;
 }
 
 
-/*KingthingsCalligraphicaItalic*/
+/*KCalligraphicaItalic*/
 
 @font-face {
-    font-family: "KingthingsCalligraphicaItalic";
-    src: url('../fonts/KingthingsCalligraphicaItalic.ttf') format('truetype');
+    font-family: "KCalligraphicaItalic";
+    src: url('../fonts/KCalligraphicaItalic.ttf');
 }
 
 .KCalligraphicaItalic {
-    font-family: "KingthingsCalligraphicaItalic" !important;
+    font-family: "KCalligraphicaItalic" !important;
 }
 
 
-/*KingthingsCalligraphicaLight*/
+/*KCalligraphicaLight*/
 
 @font-face {
-    font-family: "KingthingsCalligraphicaLight";
-    src: url('../fonts/KingthingsCalligraphicaLight.ttf') format('truetype');
+    font-family: "KCalligraphicaLight";
+    src: url('../fonts/KCalligraphicaLight.ttf');
 }
 
 .KCalligraphicaLight {
-    font-family: "KingthingsCalligraphicaLight" !important;
+    font-family: "KCalligraphicaLight" !important;
 }
 
 
-/*KingthingsFoundation*/
+/*KFoundation*/
 
 @font-face {
-    font-family: "KingthingsFoundation";
-    src: url('../fonts/KingthingsFoundation.ttf') format('truetype');
+    font-family: "KFoundation";
+    src: url('../fonts/KFoundation.ttf');
 }
 
 .KFoundation {
-    font-family: "KingthingsFoundation" !important;
+    font-family: "KFoundation" !important;
 }
 
 
@@ -86,7 +86,7 @@
 
 @font-face {
     font-family: "LCALLIG";
-    src: url('../fonts/LCALLIG.TTF') format('truetype');
+    src: url('../fonts/LCALLIG.TTF');
 }
 
 .LCALLIG {
@@ -98,7 +98,7 @@
 
 @font-face {
     font-family: "Magdeburg";
-    src: url('../fonts/Magdeburg.TTF') format('truetype');
+    src: url('../fonts/Magdeburg.TTF');
 }
 
 .Magdeburg {
@@ -110,7 +110,7 @@
 
 @font-face {
     font-family: "MediciText";
-    src: url('../fonts/MediciText.TTF') format('truetype');
+    src: url('../fonts/MediciText.TTF');
 }
 
 .MediciText {
@@ -122,7 +122,7 @@
 
 @font-face {
     font-family: "ofc____";
-    src: url('../fonts/ofc____.ttf') format('truetype');
+    src: url('../fonts/ofc____.ttf');
 }
 
 .ofc____ {
@@ -134,7 +134,7 @@
 
 @font-face {
     font-family: "OLDENGL";
-    src: url('../fonts/OLDENGL.TTF') format('truetype');
+    src: url('../fonts/OLDENGL.TTF');
 }
 
 .OLDENGL {
@@ -146,7 +146,7 @@
 
 @font-face {
     font-family: "PAGANINI";
-    src: url('../fonts/PAGANINI.TTF') format('truetype');
+    src: url('../fonts/PAGANINI.TTF');
 }
 
 .PAGANINI {
@@ -158,7 +158,7 @@
 
 @font-face {
     font-family: "PARCHM";
-    src: url('../fonts/PARCHM.TTF') format('truetype');
+    src: url('../fonts/PARCHM.TTF');
 }
 
 .PARCHM {
@@ -170,7 +170,7 @@
 
 @font-face {
     font-family: "VIVALDII";
-    src: url('../fonts/VIVALDII.TTF') format('truetype');
+    src: url('../fonts/VIVALDII.TTF');
 }
 
 .VIVALDII {
@@ -182,7 +182,7 @@
 
 @font-face {
     font-family: "WatGoth1";
-    src: url('../fonts/WatGoth1.ttf') format('truetype');
+    src: url('../fonts/WatGoth1.ttf');
 }
 
 .WatGoth1 {
