@@ -64,7 +64,7 @@ h1 span {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 710px) {
     h1 {
         font-size: 2.6rem;
     }
