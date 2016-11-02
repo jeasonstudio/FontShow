@@ -86,11 +86,21 @@ h1 span {
 }
 
 .selectColor {
-    padding: 0 15px 0 25px;
+    padding: 0 15px 0 15px;
 }
 
 .slider.slider-horizontal {
     width: 500px;
+}
+
+.slider-selection , .slider-track-high {
+    background-image: none;
+    background-color: #d2d6de!important;
+}
+
+.slider-handle {
+    background-image: none;
+    background-color: #999;
 }
 
 @media screen and (max-width: 960px) {
@@ -106,8 +116,9 @@ h1 span {
 }
 
 .selectColor span {
-    padding: 0 0 0 10px;
-    font-weight: bold;
+    padding: 0 20px 0 0;
+    color: #777;
+    font-weight: 800;
 }
 
 select {
@@ -147,6 +158,7 @@ select option {
     box-shadow: none;
     border-color: #d2d6de;
     overflow-x: scroll;
+    line-height: 1;
     font-size: 10em;
 }
 

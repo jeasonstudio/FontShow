@@ -31,15 +31,15 @@ app.controller('mainCtrl', function ($scope, $rootScope, $http) {
 
     // With JQuery Slider
     $scope.slider = $("#ex10").slider({
-        min: 5,
+        min: 1,
         max: 50,
         step: 1,
         value: 10,
         tooltip: 'show',
     });
-    $scope.fontSize = '10 em';
+    $rootScope.fontSize = '10 em';
     $scope.slider.change(function() {
-        $scope.fontSize = this.value + ' em';
+        $rootScope.fontSize = this.value + ' em';
         console.log(this.value)
         $(".inner").css('font-size',this.value + 'em')
     })
