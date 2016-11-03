@@ -175,3 +175,11 @@ select option {
     text-align: center;
     margin: 10px 0 8px;
 }
+
+.swal2-spacer {
+    display: none;
+}
+
+.swal2-content , .list-group , .list-group-item {
+    border: none!important;
+}

@@ -44,25 +44,33 @@ app.controller('mainCtrl', function ($scope, $rootScope, $http) {
 
     $scope.showInfo = function () {
         swal({
-            title: '<span>提示信息</span>',
+            title: '<span>给傻丫头的使用说明</span>',
             type: 'info',
-            html: '这里写提示信息',
+            html: '<ul class="list-group"><li class="list-group-item">如果所有字体都尝试一遍大概需要800k的流量</li><li class="list-group-item">字体大小从1em-50em变化</li><li class="list-group-item">生成图片保存功能暂不能使用</li><li class="list-group-item">右边的这个叉号可以全部清除</li></ul>',
             showCloseButton: true,
             showCancelButton: false,
-            confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!',
-            cancelButtonText: '<i class="fa fa-thumbs-down"></i>'
+            confirmButtonText: '<i class="fa fa-thumbs-up"></i>多谢彤哥',
         })
     }
 
     $scope.getImg = function () {
-        html2canvas($(".inner"), {
-            onrendered: function (canvas) {
-                var url = canvas.toDataURL();
-                //以下代码为下载此图片功能
-                var triggerDownload = $("<a>").attr("href", url).attr("download", getNowFormatDate() + "异常信息.png").appendTo(".inner");
-                triggerDownload[0].click();
-                triggerDownload.remove();
-            }
-        });
+        swal({
+            title: '<span>好好读使用说明</span>',
+            type: 'error',
+            html: '<ul class="list-group"><li class="list-group-item">都说了这个功能还不能用</li><li class="list-group-item">憋试了</li></ul>',
+            showCloseButton: true,
+            showCancelButton: false,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: '<i class="fa fa-thumbs-up"></i>好的彤哥',
+        })
+        // html2canvas($(".inner"), {
+        //     onrendered: function (canvas) {
+        //         var url = canvas.toDataURL();
+        //         //以下代码为下载此图片功能
+        //         var triggerDownload = $("<a>").attr("href", url).attr("download", getNowFormatDate() + "异常信息.png").appendTo(".inner");
+        //         triggerDownload[0].click();
+        //         triggerDownload.remove();
+        //     }
+        // });
     }
 });
